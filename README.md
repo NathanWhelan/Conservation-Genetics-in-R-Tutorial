@@ -3,37 +3,10 @@ Conservation Genetics Exercise
 EEOB 4410
 25 & 27 March 2026
 
-<style>
-body {
-  font-size: 16px !important;
-}
-</style>
-
-<style type="text/css">
-/* This fixes the light green "quotation" text and grey comments */
-&#10;/* Darker Green for Strings (Quoted Text) */
-code span.st { 
-  color: #206020 !important; 
-  font-weight: 600; 
-}
-&#10;/* Darker Grey for Comments */
-code span.co { 
-  color: #333333 !important; 
-  font-style: italic;
-}
-&#10;/* Ensure links are underlined for ADA compliance */
-a { 
-  text-decoration: underline !important; 
-}
-&#10;/* Darken the code box background slightly for better contrast */
-pre.sourceCode {
-  background-color: #f5f5f5 !important;
-  border: 1px solid #cccccc;
-  border-radius: 2px;
-}
-</style>
 
 ## Introduction to Conservation Genetics
+
+This exercise was first developed for Conservation Biology class at The Ohio State University. However, it may be of use to others.
 
 This exercise will introduce you to common conservation genetics
 techniques and analyses that can be done in R. We will be analyzing data
@@ -65,6 +38,8 @@ data if you wanted to reproduce a paper’s analyses. By starting with
 assembled data, we are skipping a required pre-step that is done outside
 or R.
 
+This tutorial is not an R Tutorial. It assumed you have some familiarity with R, probably using Rstudio.
+
 ### Assignment
 
 - Code should be written in the code editor of Rstudio and the code you
@@ -89,37 +64,32 @@ or R.
   reporting results of code that is run, so the results are not included
   here.
 
-## Logging into The Ohio Supercomputer
-
-Start by starting an interactive R session on the Ohio Supercomputer
-[Access Portal](https://class.osc.edu/). Refer back to past exercises if
-you need a refresher on how to do this. You will need to copy data from
-our class’s repository to your working directory.
-
-- Create a folder for today’s exercise (e.g., “conservation_genetics”).
-
-- Copy the data from
-  **/fs/ess/PAS3257/EEOB_4410_OSU/06_Conservation-Genetics** to your new
-  folder.
-
-- Set your working directory as inside your conservation genetics
-  folder. Remember, this can be as point and click in R studio or with
-  the command *setwd*
-
-- Each time you log into the OSC and Rstudio, you will need to set your
-  working directory to the appropriate location.
 
 ## Preparing to analyze data
 
 There are many different R packages that have been developed for
 conservation and populations genetics, some of which will use today.
 
-First, you will need to copy data from
-**/fs/ess/PAS3257/EEOB_4410_OSU/06_Conservation-Genetics** if you didn’t
+First, you will need to copy data from this repository to your R working directory if you didn’t
 already
 
 Next, let’s load packages that we will use. You can access the
-publications to learn more.
+publications to learn more. If you haven't installed them, you will need to do so. Here are commands to run (it will probably take a while to install everything).
+
+``` r
+install.packages("Rcpp")
+install.packages("ape")
+install.packages("adegent")
+install.packages("hierfstat")
+install.packages("poppr")
+
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+BiocManager::install("LEA")
+```
+
+
 
 - [adgenet](https://doi.org/10.1093/bioinformatics/btr521)
 
