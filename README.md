@@ -1,8 +1,5 @@
 Conservation Genetics Exercise
 ================
-EEOB 4410
-25 & 27 March 2026
-
 
 ## Introduction to Conservation Genetics
 
