@@ -3,35 +3,6 @@ Conservation Genetics Exercise
 EEOB 4410
 25 & 27 March 2026
 
-<style>
-body {
-  font-size: 16px !important;
-}
-</style>
-
-<style type="text/css">
-/* This fixes the light green "quotation" text and grey comments */
-&#10;/* Darker Green for Strings (Quoted Text) */
-code span.st { 
-  color: #206020 !important; 
-  font-weight: 600; 
-}
-&#10;/* Darker Grey for Comments */
-code span.co { 
-  color: #333333 !important; 
-  font-style: italic;
-}
-&#10;/* Ensure links are underlined for ADA compliance */
-a { 
-  text-decoration: underline !important; 
-}
-&#10;/* Darken the code box background slightly for better contrast */
-pre.sourceCode {
-  background-color: #f5f5f5 !important;
-  border: 1px solid #cccccc;
-  border-radius: 2px;
-}
-</style>
 
 ## Introduction to Conservation Genetics
 
